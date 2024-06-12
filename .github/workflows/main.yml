@@ -116,7 +116,7 @@ jobs:
 
   release:
     if: startsWith(github.event.ref, 'refs/tags/v')
-    needs: [test-v9, test-v9-2-1, run-appinspect]
+    needs: [test-v9, test-v9-2-1, run-appinspect-api]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
